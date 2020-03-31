@@ -3,14 +3,14 @@ import ProdunktKomponente from './ProduktKomponentestyle.css';
 
 
 
-const ProdunktKomponenteFunk = (probs) => {
+const ProdunktKomponenteFunk = (props) => {
     return (
         <div className="div-ProKom" >
             <figure>
-                <img src={probs.urlAd} alt></img>
-                <figcaption>{probs.modell}</figcaption>
+                <img src={props.urlAd} alt></img>
+                <figcaption>{props.modell}</figcaption>
             </figure>
-            <h3>{probs.preis}</h3>
+            <h3>{props.preis}</h3>
         </div>
     );
 }
